@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>erfil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #3498db;
+    }
+
+    .content {
+      margin-left: 20px;
+    }
+
+    /* Animación de rebote */
+    @keyframes rebote {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .rebote {
+      animation: rebote 0.5s infinite;
+    }
+
+    /* Animación de rotación */
+    @keyframes rotar {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotar {
+      animation: rotar 2s infinite linear;
+    }
+
+    /* Animación de desvanecimiento */
+    @keyframes desvanecimiento {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .desvanecimiento {
+      animation: desvanecimiento 2s infinite;
+    }
+
+    /* Animación de deslizamiento lateral */
+    @keyframes deslizamiento {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .deslizamiento {
+      animation: deslizamiento 2s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="rebote">Juan Pablo</h1>
+    <p class="rotar">Desarrollador Web</p>
+
+    <div class="section">
+      <h2 class="section-title desvanecimiento">Información Personal</h2>
+      <div class="content">
+        <p><strong>Correo:</strong>juanpispablo20025@gmail.com </p>
+        <p><strong>Teléfono:</strong> 098 094 1357</p>
+        <p><strong>Dirección:</strong>San Joses, Loja, Ecuador</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title deslizamiento">Experiencia</h2>
+      <div class="content">
+        <p><strong>Desarrollador Web</strong> Asofil</p>
+        <ul>
+          <li>Desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript.</li>
+          <li>Implementación de diseños responsivos y accesibles.</li>
+          <li>Colaboración con equipos de diseño y desarrollo.</li>
+        </ul>
+        <p><strong>Desarrollador Frontend</strong> Asofil</p>
+        <ul>
+          <li>Creación de interfaces de usuario intuitivas y atractivas.</li>
+          <li>Optimización de aplicaciones para mejorar la velocidad y escalabilidad.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title rebote">Educación</h2>
+      <div class="content">
+        <p><strong></strong>Universidad internacional del ecuador</p>
+        <p><strong>Diplomado en Desarrollo Web</strong> Tic</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title rotar">Habilidades</h2>
+      <div class="content">
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Angular, Vue</li>
+          <li>Node.js, Express</li>
+          <li>Git, GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
